@@ -6,33 +6,251 @@
     <title>Bibou</title> <!--!Pestaña del sitio web-->
     <link rel="stylesheet" href="styles.css"> <!--!Enlace entre CSS y HTML-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--!Enlace de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--!Enlace de íconos de Bootstrap-->
   </head>
 </head>
 <body>
-<!--!Título del sitio web-->
-    <h1>Bibou</h1>     
-<!--!Slogan del sitio-->
-    <h1>La France t'attend</h1> 
-    <br>
-    <br>
-    <br>
-
-    <div>
-<!--!Descripción-->   
-        <h2>Descubre Francia a tu manera.</h2> 
-        <h2>Explora destinos, conoce nuevos lugares y encuentra tu próxima aventura con Bibou</h2>
+<!--!Se agrego una navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!--todo:Utilización de íconos y título del sitio web-->
+    <a class="navbar-brand" href="#"><i class="bi bi-luggage"></i>BIBOU<i class="bi bi-luggage"></i></a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <!--todo:Se cambiaron los títulos de la navbar-->
+          <a class="nav-link active" aria-current="page" href="#">Destinos</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
-    
-    <div>
-<!--!Recomendaciones-->
-        <h3>Paris</h3>
-        <br>
-        <br>
-        <h4>La ciudad que más turistas recibe al año en todo el mundo es lógicamente el primer lugar que viene a la mente cuando pensamos en qué hacer en Francia, y el que encabezará tu lista si es tu primera vez en el país.</h4>
+  </div>
+</nav>
+
+<!--!Utilización del código de un container generado por la IA para colocar una sección principal-->
+<section class="sección-principal d-flex align-items-center text-white">
+  <div class="container px-5">
+    <!--todo:Ícono-->
+    <div class="mb-3">
+      <i class="bi bi-airplane-engines display-5"></i>
     </div>
+    <!--todo:Slogan del sitio-->
+    <h1 class="display-3 fw-bold">Bienvenu</h1>
+    <!--todo:Descripción-->
+    <p class="fs-5 max-w-50">Descubre Francia a tu manera. Explora destinos, conoce nuevos lugares y encuentra tu próxima aventura con Bibou.</p>
+    <!--todo:Botón-->
+    <a href="#" class="btn btn-purple btn-lg mt-3">Escoge tu próximo destino</a>
+  </div>
+</section>
+<br>
+<br>
+<br>
 
+<!--!Para las recomendaciones se utilizó el componente de cards-->
+<!--?Primera recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Ecomuseo de Cannes.webp" class="card-img-top" alt="Ecomuseo Marino">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">🗿​​ El primer ecomuseo marino 🗿​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Cannes, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Para visitar este lugar increíble, solo necesitas unas gafas de bucear, un tubo y unas aletas. Así podrás observar las seis magníficas estatuas sumergidas del escultor británico Jason deCaires Taylor. Este ecomuseo submarino fue creado en 2021 con el objetivo de sensibilizar al público sobre la protección del mar Mediterráneo. El acceso es libre y varias empresas proponen paseos en barco desde Cannes.</p>
+     <!--todo:Botón-->
+        <a href="https://en.cannes-france.com/discover-visit/lerins-islands/sainte-marguerite-island/underwater-ecomuseum/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
 
+<!--?Segunda recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Fabuloserie.jpg" class="card-img-top" alt="La Fabuloserie">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🎨​​​ Un mundo de Art Brut en la Fabuloserie en Dicy ​🎨​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Dicy, Charny Orée de Puisaye, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Este insólito museo, obra del arquitecto Alain Bourbonnais, acoge una sorprendente colección de obras pertenecientes a una corriente que los expertos definen como «Art Brut». La Fabuloserie se divide entre la Maison-Musée, donde se encuentra la colección permanente con más de 1.000 obras; el Jardin Habité, un museo al aire libre con intrigantes esculturas, como el emblemático tiovivo de Petit Pierre; y un espacio dedicado a exposiciones temporales que se renuevan cada temporada.</p>
+     <!--todo:Botón-->
+        <a href="https://www.puisaye-tourisme.fr/es/patrimoine-savoir-faire/musees-et-expositions/la-fabuloserie-en-puisaye/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
 
+<!--?Tercera recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/La Halle de La Machine.jpg" class="card-img-top" alt="La Halle de la Machine">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🐉​​ La Halle de La Machine ​🐉​​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Toulouse, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">La Halle de La Machine abrió sus puertas en 2018 en el barrio de Montaudran, en Toulouse. En esta inmensa vitrina, se puede disfrutar de un espectáculo animado y único con máquinas dignas de científicos locos. Una araña y un minotauro gigante y articulado, un tiovivo... crean un ambiente atípico que invita a dejar volar la imaginación y garantiza pasar un momento memorable.</p>
+     <!--todo:Botón-->
+        <a href="https://www.halledelamachine.fr/es/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Cuarta recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Cine y Museo de Miniaturas.jpg" class="card-img-top" alt="El Cine y Museo de Miniaturas">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🏛️​​​​ El Museo del Cine y las Miniaturas ​🏛️​​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Lyon, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">En 2.000 m², la exposición permanente de este insólito museo revela una colección digna de los mejores platós de rodaje. Presenta trajes y decorados en miniatura de la Guerra de las galaxias, Indiana Jones, Aliens o incluso, Parque Jurásico. Este lugar atípico, situado en el corazón del barrio de Vieux-Lyon, muestra las creaciones en miniatura del talentoso Dan Ohlmann, cuyo deseo es dar a conocer al mundo las maravillas de los «magos de la imagen».</p>
+     <!--todo:Botón-->
+        <a href="https://en.visiterlyon.com/out-and-about/culture-and-leisure/culture-and-museums/museums/cinema-and-miniature-museum" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Quinta recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Las alineaciones de Carnac.jpg" class="card-img-top" alt="Las Alineaciones de Carnac">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🪨​​​​ Las enigmáticas alineaciones de Carnac ​🪨​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Carnac, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Las alineaciones megalíticas de Carnac, situadas en Morbihan, representan un enigma fascinante que los arqueólogos intentan explicar. De octubre a marzo, los visitantes pueden observar libremente estas misteriosas estructuras. De abril a septiembre, el acceso a las alineaciones está restringido a las visitas guiadas de pago, que ofrecen conferencias detalladas y una entrada exclusiva al interior de los sitios.</p>
+     <!--todo:Botón-->
+        <a href="https://www.vacaciones-bretana.com/destinos/10-destinos/el-sur-de-bretana-el-golfo-del-morbihan/carnac-y-sus-megalitos/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Sexta recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/La ciudadela encaramada de Corte.webp" class="card-img-top" alt="La ciudadela">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​​🏰​ La ciudadela encaramada de Corte ​​🏰</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Corte, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Conocida como «nido de águila», la ciudadela de Corte ofrece un viaje cautivador a través de la historia con sus imponentes fortificaciones y sus vistas espectaculares. Su construcción comenzó en el siglo XV y duró 350 años, siendo testigo de la proeza arquitectónica necesaria para la época. Los visitantes pueden explorar sus callejuelas pavimentadas y descubrir el Museo de la Corse en la parte conocida como «el castillo». Hoy en día, este lugar transformado en centro cultural, fue hasta 1983 ocupado por la Legión Extranjera.</p>
+     <!--todo:Botón-->
+        <a href="https://www.minube.com/rincon/ciudadela-de-corte-a3667" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Séptima recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/El sorprendente Museo de Encajes de Caudry.jpg" class="card-img-top" alt="El Museo de Encajes">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🧵​​​​ El sorprendente Museo de Encajes de Caudry ​🧵​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Caudry, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Este museo, situado en el pueblo de Caudry, en Altos de Francia, está dedicado a la historia de una actividad artesanal que se convirtió en una de las principales riquezas de la región a partir del siglo XIX. Caudry fue considerada la capital mundial del encaje en el siglo XIX. El Museo de Encajes presenta tres exposiciones temporales al año, además de ofrecer animaciones y eventos. A pesar de la desindustrialización que afectó a Francia, el municipio cuenta aún con un grupo de encajeras que exportan más del 80 % de su delicada producción.</p>
+     <!--todo:Botón-->
+        <a href="https://www.calaisxxl.com/es/offres/a-voir-a-faire/cite-de-la-dentelle-et-de-la-mode/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Octava recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Los míticos huesos humanos de las Catacumbas de París.jpg" class="card-img-top" alt="Las Catacumbas de París">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🩻​​ Los míticos huesos humanos de las Catacumbas de París ​🩻​​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Paris, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Este insólito museo, obra del arquitecto Alain Bourbonnais, acoge una sorprendente colección de obras pertenecientes a una corriente que los expertos definen como «Art Brut». La Fabuloserie se divide entre la Maison-Musée, donde se encuentra la colección permanente con más de 1.000 obras; el Jardin Habité, un museo al aire libre con intrigantes esculturas, como el emblemático tiovivo de Petit Pierre; y un espacio dedicado a exposiciones temporales que se renuevan cada temporada.</p>
+     <!--todo:Botón-->
+        <a href="https://viajes.nationalgeographic.com.es/ubicacion-exacta/seis-millones-esqueletos-que-esconde-capitales-europeas-mas-importantes_20302" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Novena recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/La sublime destilería del Palais Bénédictine.webp" class="card-img-top" alt="La Destileria del Palais Bénédictine">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🍾 La sublime destilería del Palais Bénédictine ​🍾​​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Fécamp, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">La única destilería benedictina del mundo se encuentra en Fécamp. Además de poder visitar el suntuoso edificio de estilo neogótico que acoge la destilería de este licor compuesto por 27 plantas y especias, su museo permite comprender el proceso de fabricación. Una experiencia cultural, sensorial y gastronómica te espera aquí.</p>
+     <!--todo:Botón-->
+        <a href="https://es.normandie-tourisme.fr/lugares-visitas/palais-benedictine-musee-et-distillerie/" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+
+<!--?Décima recomendación-->
+<div class="card mb-3">
+  <!--todo:Imagen-->
+  <img src="assets/Las máquinas gigantes en Île de Nantes.jpg" class="card-img-top" alt="Las Máquinas Gigantes">
+    <div class="card-body">
+      <!--todo:Nombre de la atracción-->
+        <h5 class="card-title">​🐘​​​ Las máquinas gigantes en Île de Nantes ​🐘​​​</h5>
+      <!--todo:Ícono y ubicación-->
+        <p><i class="bi bi-geo-alt-fill"></i>Nantes, France</p>
+     <!--todo:Descripción-->
+        <p class="card-text">Inspiradas en el universo de Julio Verne, estas máquinas monumentales cautivan a los visitantes. Puedes embarcarte en un viaje a bordo del elefante gigante o visitar la Galería de las Máquinas y el Carrusel de los Mundos Marinos. Los visitantes son transportados a un mundo fantástico donde la imaginación se encuentra con el ingenio y la técnica. Este lugar insólito es una experiencia que no te puedes perder.</p>
+     <!--todo:Botón-->
+        <a href="https://www.lesmachines-nantes.fr/es/" target="_blank" class="btn btn-danger btn-lg mt-3">Más detalles aquí</a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!--!Pie de página-->
+<!--todo:Para el footer se decicio utilizar el componente grid-->
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <footer>
+        <p><i class="bi bi-c-circle-fill"></i>
+          Bibou: La France t'attend</p>
+        <p>🤖​ Mini sitio web generado con apoyo de IA 🤖​</p>
+        <p>Desarrollado por: Daniela Chagal</p>
+      </footer>
+    </div>
+  </div>
+</div>
 
     <script src="script.js"></script> <!--!Enlce entre JS y HTML-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> <!--!Enlace de JS de Bootstrap-->
