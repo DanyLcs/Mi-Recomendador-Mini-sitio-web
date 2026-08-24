@@ -1,0 +1,31 @@
+.sección-principal {
+  /*todo:Imagen de fondo + filtro oscuro encima para legibilidad del texto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/la-france.jpg");
+  
+  /*todo:Ajustes para que la imagen cubra todo el contenedor sin deformarse */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /*todo:Le damos un alto mínimo basado en la pantalla del navegador (85vh = 85% de la pantalla) */
+  min-height: 85vh; 
+}
+
+/*todo:Estilo para ajustar el ancho del texto explicativo */
+.max-w-50 {
+  max-width: 500px;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p { 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
