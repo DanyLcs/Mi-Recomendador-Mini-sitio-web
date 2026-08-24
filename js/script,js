@@ -1,0 +1,21 @@
+/*Variables de texto*/
+const nombrePagina = ("Bibou");
+alert("Bienvenido a " + nombrePagina);
+const paisDestino = prompt("Ingresa tu país de destino", "Francia");
+
+console.log("Bienvenido a " + nombrePagina);
+console.log("Tu país de destino es " + paisDestino); 
+
+/*Variables de número*/
+let presupuestoSugerido = prompt("Ingresa tu presupuesto ", 350);
+let diasEstancia = prompt ("Ingresa tus días de estancia ", 7);
+
+console.log("El presupuesto sugerido es de " + presupuestoSugerido + " euros");
+console.log("Los días de tu estancia son " + diasEstancia + " días");
+
+/*Variable booleana*/
+let requiereVisa = prompt("¿Cuentas con visa?", "Sí");
+
+alert("Recuerda que para ir a Francia necesitarás Visa");
+
+console.log("¿Cuentas con visa? " + requiereVisa);
